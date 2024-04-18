@@ -2,6 +2,8 @@ body {
     /* overflow-x: hidden; */
     padding: 0;
     margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    /* font-weight: 300; */
 }
 
 .banner {
@@ -135,20 +137,33 @@ h2+.card {
 
 .info3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    color: #636363;
+}
+
+.info3-fluid {
+    background-color: #F8F8F8;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.info3 h3 {
+    font-size: 20px;
 }
 
 .info3 i {
     font-size: 30px;
-    margin-right: 10px;
+    margin-right: 2rem;
+    color: #636363;
 }
 
 footer {
     background-color: #000;
-    height: 500px;
+    height: 73vh;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 
@@ -158,20 +173,62 @@ footer {
 }
 
 .footer-logo-small i {
-    width: 2rem;
+    width: 3rem;
+    font-size: 2rem;
     color: white;
 }
 
-footer h4 {
+footer h5 {
     color: white;
 }
 
 .center-align {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 footer .row img {
-    margin-bottom: 2rem;
+    /* margin-bottom: 1rem; */
+}
+
+footer ul li {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul {
+    padding-left: 0px;
+    line-height: 2.1rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo-image {
+    width: 100%;
+}
+
+.tnc {
+    display: flex;
+    background-color: #151515;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.tnc a {
+    color: white;
+    text-decoration: none;
+}
+
+.partner-footer-img {
+    width: 3rem;
+}
+
+.partner {
+    height: 10vh;
 }
