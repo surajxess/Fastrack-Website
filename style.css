@@ -148,4 +148,30 @@ footer {
     background-color: #000;
     height: 500px;
     width: 100%;
+    padding-top: 2rem;
+}
+
+
+.footer-logo-small {
+    display: flex;
+    width: 300px;
+}
+
+.footer-logo-small i {
+    width: 2rem;
+    color: white;
+}
+
+footer h4 {
+    color: white;
+}
+
+.center-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .row img {
+    margin-bottom: 2rem;
 }
