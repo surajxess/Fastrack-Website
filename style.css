@@ -65,6 +65,11 @@ nav {
     flex: 0 0 auto;
 }
 
+.mprice, .cprice, .discount {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
 .grid {
     display: flex;
 }
@@ -115,7 +120,15 @@ marquee {
 .card-image {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    position: relative;
+    /* padding: 1rem; */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
 }
 
 .card-image h3 {
@@ -292,6 +305,90 @@ h6 {
 
 .infomsg {
     height: 10vh;
-    border-top: 1px solid black;
+    border-top: 1px solid #636363;
     border-bottom: 1px solid black;
+}
+
+.sortrow {
+    width: 15rem;
+    height: 2rem;
+    margin: 1rem 0.6rem;
+    border: 1px solid gray;
+    border-radius: 0.4rem;
+}
+
+.sortrow select {
+    border: none;
+    width: 70%;
+    padding: 0;
+}
+
+.sortrow h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.card-body .subhead {
+    display: block;
+    margin-top: -0.3rem;
+    color: #9b9696;
+}
+
+.card-body button {
+    display: none;
+    width: 100%;
+    height: 50%;
+    /* border-top-left-radius: 60%; */
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.card-hover:hover .card-body .card-title {
+    display: none;
+}
+
+.card-hover:hover .card-body button {
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    width: 30%;
+    height: 5%;
+    border-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: orange;
+
+}
+
+.badge h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.ratings {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 1rem;
+}
+
+.wishlist {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
 }
