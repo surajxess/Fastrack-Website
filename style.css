@@ -328,7 +328,7 @@ h6 {
     margin: 0;
 }
 
-.card-body .subhead {
+ .subhead {
     display: block;
     margin-top: -0.3rem;
     color: #9b9696;
@@ -361,7 +361,6 @@ h6 {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: orange;
-
 }
 
 .badge h6 {
@@ -391,4 +390,103 @@ h6 {
     height: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
+}
+
+.box {
+    border-top: 1px solid #636363;
+}
+
+.box1 {
+    width: 20%;
+    /* padding: 0; */
+
+}
+
+.box1 div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 img {
+    width: 50%;
+}
+
+.smb {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #63636345;
+    margin: 0.3rem;
+    border-radius: 4px;
+}
+
+.smb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.heartbutton {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #63636345;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.heartbutton i {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.buttons button {
+    padding: 0 4rem;
+}
+
+.btn-warning {
+    background-color: #FF8033;
+    border-color: #FF8033;
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.coupons {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #63636345;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.couponbox {
+    width: 70%;
+    height: 30%;
+    background-color: #FF8033   ;
+}
+
+.coupons h5 {
+    margin: 0;
+}
+
+.emi {
+    width: 100%;
+    height: 120px;
+    padding: 0.2rem 0 0 0.6rem;
+    background-color: #FF8033;
+    border-radius: 0.5rem;
+}
+
+.emibox {
+    width: 98%;
+    height: 60%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+}
+
+.accordion {
+    padding: 0;
+    width: 90%;
 }
