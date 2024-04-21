@@ -16,6 +16,29 @@ nav {
     height: 75px;
 }
 
+.fullnav {
+    display: block;
+}
+
+.compactnav {
+    display: none;
+}
+/* Media Query */
+
+@media (max-width: 1067px) {
+    .compactnav {
+        display: block;
+    }
+
+    .fullnav {
+        display: none;
+    }
+}
+
+.navtext a {
+    font-size: 1rem;
+}
+
 .navbar-brand img {
     width: 200px;
 }
@@ -46,16 +69,29 @@ nav {
     display: flex;
 }
 
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li a {
+    font-weight: 500;
+    /* font-size: 4rem; */
+}
+
 .vertical-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
     text-transform: uppercase;
-    text-align: left;
-    font-size: 60px;
-    height: 26rem;
+    text-align: bottom; 
+    font-size: 3rem;
+    /* height: 26rem; */
     width: 2rem;
-    margin-right: 20px;
+    margin-left: -1rem;
+    /* margin-top: 2rem; */
+    
 }
 
 marquee {
@@ -79,6 +115,7 @@ marquee {
 .card-image {
     display: flex;
     justify-content: center;
+    padding: 1rem;
 }
 
 .card-image h3 {
@@ -225,10 +262,36 @@ footer ul li a {
     text-decoration: none;
 }
 
+.tdn {
+    text-decoration: none;
+    color: black;
+}
+
+h6 {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 .partner-footer-img {
     width: 3rem;
 }
 
 .partner {
     height: 10vh;
+}
+
+.exp {
+    background-size: auto;
+    height: 80%;
+}
+
+.grey-text-small {
+    color: #636363;
+    font-size: 12px;    
+}
+
+.infomsg {
+    height: 10vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
