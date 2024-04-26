@@ -22,12 +22,15 @@ nav {
 
 .compactnav {
     display: none;
+    height: 10vh;
 }
 /* Media Query */
 
 @media (max-width: 1067px) {
     .compactnav {
         display: block;
+        height: 15vh;
+        /* background-color: white; */
     }
 
     .fullnav {
@@ -239,10 +242,6 @@ footer h5 {
     flex-wrap: wrap;
 }
 
-footer .row img {
-    /* margin-bottom: 1rem; */
-}
-
 footer ul li {
     list-style-type: none;
     padding: 0;
@@ -334,20 +333,23 @@ h6 {
     color: #9b9696;
 }
 
-.card-body button {
+.card-body .button {
     display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 50%;
-    /* border-top-left-radius: 60%; */
     margin: 0 auto;
-    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+    margin-bottom: 0.8rem;
 }
 
 .card-hover:hover .card-body .card-title {
     display: none;
+    /* margin: 0; */
 }
 
-.card-hover:hover .card-body button {
+.card-hover:hover .card-body .button {
     display: block;
 }
 
@@ -452,6 +454,12 @@ h6 {
     color: white;
 }
 
+.btn-warning:hover {
+    background-color: #ff6200;
+    border-color: #FF8033;
+    color: white;
+}
+
 .coupons {
     width: 100%;
     height: 120px;
@@ -489,4 +497,16 @@ h6 {
 .accordion {
     padding: 0;
     width: 90%;
+}
+
+.warranty {
+    border: 1px solid #92929242;
+    background-color: #F1F1F1;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.questions {
+    background-color: rgba(255, 127, 80, 0.312);
+    padding: 0.5rem;
 }
