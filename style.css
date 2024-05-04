@@ -510,3 +510,61 @@ h6 {
     background-color: rgba(255, 127, 80, 0.312);
     padding: 0.5rem;
 }
+
+.userhover {
+    width: 20%;
+    position: absolute;
+    background-color: white;
+    /* display: none; */
+    top: 100%;
+    right: 40px;
+    /* height: 42vh; */
+    
+}
+
+.userhover:hover {
+    display: block;
+}
+
+.dropdown-menu:hover + .userhover{
+    display: block;
+}
+
+ .loginhover a:hover + .userhover {
+    display: block;
+} 
+/* 
+.loginhover:hover + .dropdown-menu {
+    display: block;
+} */
+
+.userhover li{
+    margin-left: -25px;
+    list-style-type: none;
+}
+
+.userhover li a {
+    text-decoration: none;
+    color: black;
+}
+
+.signupbox {
+    width: 80%;
+    margin: 5% auto;
+    border: 1px solid #636363;
+    border-radius: 1rem;
+
+}
+
+.signupbox img {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.inputtext {
+    width: 100%;
+    height: 50px;
+    border-radius: 0.5rem;
+    border: 0.2px solid red;
+    padding-left: 3rem;
+}
