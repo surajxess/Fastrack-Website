@@ -29,7 +29,7 @@
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col-md-3 dflex">
-                    <a href="#" class="navbar-brand ">
+                    <a href="index.html" class="navbar-brand ">
                         <img src="Images/FASTRACK-Logo-Black.png" alt="" class="">
                     </a>
                 </div>
@@ -46,7 +46,30 @@
                 <div class="col-md-3">
                     <ul class="nav pt-3 dflex">
                         <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a></li>
+                        <li class="nav-item loginhover">
+                            <a href="#" class="nav-link">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                            <div class="userhover">
+                                <div class="container">
+                                    <h5 class="mt-4 mb-3">Join the Tribe.</h5>
+                                    <a class="btn btn-warning rounded-pill" href="sign-up.html">Sign Up</a>
+                                    <a class="btn btn-outline-dark rounded-pill" href="#">Login</a>
+                                    <br>
+                                    <hr>
+                                    <ul>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="#">E-Gift Cards</a></li>
+                                        <li><a href="#">Find A Store</a></li>
+                                        <li><a href="#">FAQ's</a></li>
+                                        <li><a href="#">Help and Contact</a></li>
+                                        <li><a href="#">Book an Appointment</a></li>
+                                    </ul>
+                                    <br>
+                                </div>
+                                
+                            </div>
+                        </li>
                         <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-heart"></i></a></li>
                         <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bag-shopping"></i></a></li>
                         <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-first-order-alt"></i></a></li>
@@ -58,46 +81,69 @@
 
     <!-- Compact Navigation -->
     <nav class="navbar navbar-dark bg-dark fixed-top compactnav">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex align-items-center justify-content-start">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+            <a class="navbar-brand ms-3" href="#"><img src="Images/FASTRACK-Logo-White.svg" alt=""></a>
           <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-header ps-3 pe-3 pt-3">
+                <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvsdjfhjas</h5> -->
+              <div class="compactnav-cover">
+                <div class="row d-flex">
+                    <div class="col-md-5 ps-3">
+                        <h6>Like our vibe?</h6>
+                        <h6>Join the tribe!</h6>
+                        <p>Use code FIRST and Get 10% OFF* on Fresh Watches</p>        
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <div class="compactbtns ">
+                            <a href="#" class="btn btn-warning rounded-pill">Sign Up</a>
+                            <a href="#" class="btn btn-outline-dark rounded-pill">Login</a>
+                        </div>
+                    </div>
+                    <div class="col-md-1 p-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+              </div>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>
+              <div class="option d-flex align-items-center justify-content-between mb-3">
+                <h5>Watches</h5>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="option d-flex align-items-center justify-content-between mb-3">
+                <h5>Smart Watches</h5>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="option d-flex align-items-center justify-content-between mb-3">
+                <h5>Reflex Tunes</h5>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="option d-flex align-items-center justify-content-between mb-3">
+                <h5>Sale</h5>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="option d-flex align-items-center justify-content-between mb-3">
+                <h5>Gifting</h5>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="option d-flex align-items-center justify-content-between mb-3">
+                <h5>More</h5>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <hr>
+              <a href="#" class="w-100 d-block mb-2 cnavlink">Find a Stores</a>
+              <a href="#" class="w-100 d-block mb-2 cnavlink">Track Order</a>
+              <a href="#" class="w-100 d-block mb-2 cnavlink">Book an Appointment</a>
+              <a href="#" class="w-100 d-block mb-2 cnavlink">Wishlist</a>
+              <a href="#" class="w-100 d-block mb-2 cnavlink">FAQ's</a>
+              <a href="#" class="w-100 d-block mb-2 cnavlink">Help & Contact</a>
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
 
 
     <div class="container">
@@ -332,61 +378,62 @@
 
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-        <div class="row">
-            <div class="col-md-4 center-align ">
-                <div class="row">
-                    <a href="#">
-                        <img src="Images/FASTRACK-Logo-White.svg" class="footer-logo-image" alt="">
-                    </a>
+    <footer class="mt-5 large-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 center-align ">
+                    <div class="row">
+                        <a href="#">
+                            <img src="Images/FASTRACK-Logo-White.svg" class="footer-logo-image" alt="">
+                        </a>
+                    </div>
+                    <div class="row footer-logo-small center-align">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
                 </div>
-                <div class="row footer-logo-small center-align">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-pinterest"></i>
+                
+                <div class="col-md-3">
+                    <h5>CUSTOMER SERVICE</h5>
+                    <ul>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Encircle Program</a></li>
+                    </ul>
+                    <br>
+                    <h5>CONTACT US</h5>
+                    <ul>
+                        <li><a href="#">1800-266-0123</a></li>
+                        <li><a href="#">customercare@titan.co.in</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>                
                 </div>
-            </div>
-            <div class="col-md-3">
-                <h5>CUSTOMER SERVICE</h5>
-                <ul>
-                    <li><a href="#">Payment Options</a></li>
-                    <li><a href="#">Track Order</a></li>
-                    <li><a href="#">Find a Store</a></li>
-                    <li><a href="#">Encircle Program</a></li>
-                </ul>
-                <br>
-                <h5>CONTACT US</h5>
-                <ul>
-                    <li><a href="#">1800-266-0123</a></li>
-                    <li><a href="#">customercare@titan.co.in</a></li>
-                    <li><a href="#">FAQ's</a></li>
-                </ul>                
-            </div>
-            <div class="col-md-2">
-                <h5>POLICIES</h5>
-                <ul>
-                    <li><a href="#">Brand Protection</a></li>
-                    <li><a href="#">Cancellation</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Warranty Policies</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>ABOUT FASTRACK</h5>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Help and Contact</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-                <br>
-                <h5>NEED HELP?</h5>
-                <h5>Chat with us on <a href="#" style="color: white;">Whatsapp</a></h5>
+                <div class="col-md-2">
+                    <h5>POLICIES</h5>
+                    <ul>
+                        <li><a href="#">Brand Protection</a></li>
+                        <li><a href="#">Cancellation</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Warranty Policies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ABOUT FASTRACK</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help and Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                    <br>
+                    <h5>NEED HELP?</h5>
+                    <h5>Chat with us on <a href="#" style="color: white;">Whatsapp</a></h5>
+                </div>
             </div>
         </div>
-    </div>
     <div class="container-fluid text-center tnc">
         <h6><a href="#">Terms and Conditions</a> <a href="#"> | </a><a href="#">Privacy Policy</a></h6>
     </div>
@@ -408,6 +455,59 @@
             </div>
         </div>
     </div>
+    </footer>
+
+    <!-- Small Footer -->
+    <footer class="small-footer">
+        <div class="container-fluid ps-3 pe-3">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="logo">
+                    <img src="Images/FASTRACK-Logo-White.svg" alt="" class="">
+                </div>
+            </div>
+            <div class="footer-menu d-flex align-items-center justify-content-between">
+                <h5>CUSTOMER SERVICE</h5>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="footer-menu d-flex align-items-center justify-content-between">
+                <h5>CONTACT US</h5>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="footer-menu d-flex align-items-center justify-content-between">
+                <h5>POLICIES</h5>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="footer-menu d-flex align-items-center justify-content-between">
+                <h5>ABOUT FASTRACK</h5>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+
+
+        </div>
+        <div class="container-fluid text-center tnc">
+            <h6><a href="#">Terms and Conditions</a> <a href="#"> | </a><a href="#">Privacy Policy</a></h6>
+        </div>
+        <div class="container-fluid">
+            <div class="row partner">
+                <div class="col-md-12 mt-4 center-align justify-content-space-between center-align">
+                    <img class="partner-footer-img" src="Images/visaFd.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/mastercardiconFD.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/paypalFD.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/maestro.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/rupeeFD.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/axisbankFD.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/icicibankFD.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/DinnerClubFD.svg" alt="" >
+                    <img class="partner-footer-img" src="Images/americanExpressFD.svg" alt="" >
+                </div>
+                <div class="col-md-12 d-flex align-items-center justify-content-center mt-5">
+                    <h6>&copy 2023 Titan Company Limited. All Rights Reserved. </h6>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
