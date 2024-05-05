@@ -595,15 +595,30 @@ h6 {
 }
 
 .cart-box {
-    padding: 3rem 0 1rem 0;
+    /* padding: 3rem 0 1rem 0; */
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
 .itemno {
     font-size: 0.8rem;
+    margin: 0;
 }
 
 .descriptionbox {
     padding: 0 1rem 0 1rem;
+}
+
+.desc {
+    margin: 0;
+}
+
+#giftwrap, #giftmsg {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.wishlistcart {
+    margin: 0;
 }
