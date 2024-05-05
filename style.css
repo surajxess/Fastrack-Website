@@ -515,11 +515,16 @@ h6 {
     width: 20%;
     position: absolute;
     background-color: white;
-    /* display: none; */
+    display: none;
     top: 100%;
     right: 40px;
     /* height: 42vh; */
     
+}
+
+.loginhover:hover {
+    display: block;
+    border-bottom: 1px solid #ff6200;
 }
 
 .userhover:hover {
@@ -533,10 +538,10 @@ h6 {
  .loginhover a:hover + .userhover {
     display: block;
 } 
-/* 
+
 .loginhover:hover + .dropdown-menu {
     display: block;
-} */
+}
 
 .userhover li{
     margin-left: -25px;
@@ -567,4 +572,38 @@ h6 {
     border-radius: 0.5rem;
     border: 0.2px solid red;
     padding-left: 3rem;
+}
+
+.numberbadge-active {
+    background-color: #FF8033;
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 0.5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    height: 30px;
+    display: inline-block;
+    color: white;
+}
+
+.numberbadge {
+    background-color: rgba(128, 128, 128, 0.332);
+    margin-right: 1rem;
+    padding: 0.3rem 0.5rem;
+    padding-left: 0.7rem;
+    border-radius: 90%;
+}
+
+.cart-box {
+    padding: 3rem 0 1rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.itemno {
+    font-size: 0.8rem;
+}
+
+.descriptionbox {
+    padding: 0 1rem 0 1rem;
 }
