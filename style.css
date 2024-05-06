@@ -14,6 +14,7 @@ body {
 
 nav {
     height: 75px;
+    position: relative;
 }
 
 .fullnav {
@@ -706,4 +707,116 @@ h6 {
 
 .ac {
     box-sizing: border-box;
+}
+
+.delete i {
+    margin-right: 0.5rem;
+}
+
+.wishlistcart i {
+    margin-right: 0.2rem;
+}
+
+.order-summary-heading {
+    margin-top: 1rem;
+}
+
+.order-summary-heading + p {
+    color: green;
+}
+
+.grand-total + a {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon a {
+    color: #FF8033;
+}
+
+.megamenu, .megamenu-1 {
+    display: none;
+    width: 100%;
+    padding: 1rem auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+}
+
+.megamenu li, .megamenu-1 li {
+    list-style-type: none;
+    margin: 0.8rem 0 0 0;
+}
+
+.megamenu ul, .megamenu-1 ul {
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+.megamenu li a, .megamenu-1 li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+.megamenu a, .megamenu-1 a {
+    color: black;
+}
+
+.megamenu .row, .megamenu-1 .row {
+    margin-top: 10rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu-hover-heading {
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.menu-1 a:hover + .megamenu {
+    display: block;
+}
+
+.menu-1:hover + .megamenu {
+    display: block;
+}
+
+.megamenu:hover {
+    display: block;
+}
+
+.menu-1:hover, .menu-2:hover {
+    border-bottom: 1px solid #FF8033;
+}
+
+.megamenu li a:hover {
+    text-decoration: underline;
+}
+
+/* Menu 2 */
+
+.menu-2 a:hover + .megamenu-1 {
+    display: block;
+}
+
+.menu-2:hover + .megamenu-1 {
+    display: block;
+}
+
+.megamenu-1:hover {
+    display: block;
+}
+
+.menu-1:hover {
+    border-bottom: 1px solid #FF8033;
+}
+
+.megamenu-1 li a:hover {
+    text-decoration: underline;
 }
