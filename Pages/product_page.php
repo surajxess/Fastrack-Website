@@ -1,155 +1,30 @@
+<!-- Variables -->
+<?php
+    define('style_link', '../style.css')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fastrack</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-
-    <!-- Bootstrap -->
-    <script src="https://kit.fontawesome.com/d5304e52ae.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    
+<?php
+    include '../Assets/header.php';
+?>
 <body>
     <!-- Info before Nav -->
-    <div class="container-fluid">
-        <div class="banner">
-            <marquee behavior="" direction="">Use code FIRST and Get 10% OFF* on Fresh Watches over Rs 2499. Maximum Discount: Rs.500. T&C Apply Use code FIRST and Get 10% OFF* on Fresh Watches over Rs 2499. Maximum Discount: Rs.500. T&C Apply Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.
-            </marquee>
-        </div>
-    </div>
+    <?php
+        include '../Assets/marquee.php';
+    ?>
 
     <!-- Navigation Bar -->
-    <nav class="nav sticky-top bg-white fullnav">
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-md-3 dflex">
-                    <a href="index.html" class="navbar-brand ">
-                        <img src="Images/FASTRACK-Logo-Black.png" alt="" class="">
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav justify-content-center pt-3">
-                        <li class="nav-item navtext"><a href="#" class="nav-link" >WATCHES</a></li>
-                        <li class="nav-item navtext"><a href="#" class="nav-link">SMART WATCHES</a></li>
-                        <li class="nav-item navtext"><a href="#" class="nav-link">REFLEX TUNES</a></li>
-                        <li class="nav-item navtext"><a href="#" class="nav-link">SALE</a></li>
-                        <li class="nav-item navtext"><a href="#" class="nav-link">GIFTING</a></li>
-                        <li class="nav-item navtext"><a href="#" class="nav-link">MORE</a></li>
-                    </ul>    
-                </div>
-                <div class="col-md-3">
-                    <ul class="nav pt-3 dflex">
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li class="nav-item loginhover">
-                            <a href="#" class="nav-link">
-                                <i class="fa-regular fa-user"></i>
-                            </a>
-                            <div class="userhover">
-                                <div class="container">
-                                    <h5 class="mt-4 mb-3">Join the Tribe.</h5>
-                                    <a class="btn btn-warning rounded-pill" href="sign-up.html">Sign Up</a>
-                                    <a class="btn btn-outline-dark rounded-pill" href="#">Login</a>
-                                    <br>
-                                    <hr>
-                                    <ul>
-                                        <li><a href="#">Wishlist</a></li>
-                                        <li><a href="#">E-Gift Cards</a></li>
-                                        <li><a href="#">Find A Store</a></li>
-                                        <li><a href="#">FAQ's</a></li>
-                                        <li><a href="#">Help and Contact</a></li>
-                                        <li><a href="#">Book an Appointment</a></li>
-                                    </ul>
-                                    <br>
-                                </div>
-                                
-                            </div>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-heart"></i></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-first-order-alt"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Compact Navigation -->
-    <nav class="navbar navbar-dark bg-dark fixed-top compactnav">
-        <div class="container-fluid d-flex align-items-center justify-content-start">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <a class="navbar-brand ms-3" href="#"><img src="Images/FASTRACK-Logo-White.svg" alt=""></a>
-          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header ps-3 pe-3 pt-3">
-                <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvsdjfhjas</h5> -->
-              <div class="compactnav-cover">
-                <div class="row d-flex">
-                    <div class="col-md-5 ps-3">
-                        <h6>Like our vibe?</h6>
-                        <h6>Join the tribe!</h6>
-                        <p>Use code FIRST and Get 10% OFF* on Fresh Watches</p>        
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <div class="compactbtns ">
-                            <a href="#" class="btn btn-warning rounded-pill">Sign Up</a>
-                            <a href="#" class="btn btn-outline-dark rounded-pill">Login</a>
-                        </div>
-                    </div>
-                    <div class="col-md-1 p-0">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="offcanvas-body">
-              <div class="option d-flex align-items-center justify-content-between mb-3">
-                <h5>Watches</h5>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="option d-flex align-items-center justify-content-between mb-3">
-                <h5>Smart Watches</h5>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="option d-flex align-items-center justify-content-between mb-3">
-                <h5>Reflex Tunes</h5>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="option d-flex align-items-center justify-content-between mb-3">
-                <h5>Sale</h5>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="option d-flex align-items-center justify-content-between mb-3">
-                <h5>Gifting</h5>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="option d-flex align-items-center justify-content-between mb-3">
-                <h5>More</h5>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <hr>
-              <a href="#" class="w-100 d-block mb-2 cnavlink">Find a Stores</a>
-              <a href="#" class="w-100 d-block mb-2 cnavlink">Track Order</a>
-              <a href="#" class="w-100 d-block mb-2 cnavlink">Book an Appointment</a>
-              <a href="#" class="w-100 d-block mb-2 cnavlink">Wishlist</a>
-              <a href="#" class="w-100 d-block mb-2 cnavlink">FAQ's</a>
-              <a href="#" class="w-100 d-block mb-2 cnavlink">Help & Contact</a>
-            </div>
-          </div>
-        </div>
-    </nav>
+    <?php
+        include '../Assets/navigation.php';
+    ?>
 
 
     <div class="container">
         <!-- Navigation Links  -->
         <div class="row">
-            <h6><span><a class="tdn" href="index.html">Home</a></span><span>></span><span><a class="tdn" href="#">Analog</a></span></h6>
+            <h6><span><a class="tdn" href="../index.php">Home</a></span><span>></span><span><a class="tdn" href="#">Analog</a></span></h6>
         </div>
         <div class="infomsg  d-flex align-items-center justify-content-center">
             <h2>793 items found for <span>"Analog Watches"</span></h2>
@@ -184,7 +59,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-1.jpg" alt="">
+                    <img src="../Images/Products/product-1.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -200,7 +75,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-2.jpg" alt="">
+                    <img src="../Images/Products/product-2.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -216,7 +91,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-3.jpg" alt="">
+                    <img src="../Images/Products/product-3.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -232,7 +107,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-4.jpg" alt="">
+                    <img src="../Images/Products/product-4.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -248,7 +123,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-5.jpg" alt="">
+                    <img src="../Images/Products/product-5.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -264,7 +139,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-6.jpg" alt="">
+                    <img src="../Images/Products/product-6.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -280,7 +155,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-7.jpg" alt="">
+                    <img src="../Images/Products/product-7.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -296,7 +171,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-8.jpg" alt="">
+                    <img src="../Images/Products/product-8.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -312,7 +187,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-9.jpg" alt="">
+                    <img src="../Images/Products/product-9.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -328,7 +203,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-10.jpg" alt="">
+                    <img src="../Images/Products/product-10.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -344,7 +219,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-11.jpg" alt="">
+                    <img src="../Images/Products/product-11.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
@@ -360,7 +235,7 @@
                     </div>
                     <div class="ratings"><i class="fa-solid fa-star"></i><span>4.4 (21)</span></div>
                     <div class="wishlist d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
-                    <img src="Images/Products/product-12.jpg" alt="">
+                    <img src="../Images/Products/product-12.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Fastrack Vyb Halo Quartz Analog Brown Dial Metal Strap Watch</h6>
