@@ -1,4 +1,6 @@
-
+<?php
+$style_link = '../style.css';
+?>
 
 
 <head>
@@ -14,5 +16,5 @@
     <!-- Bootstrap -->
     <script src="https://kit.fontawesome.com/d5304e52ae.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href=<?php echo style_link ?>>
+    <link rel="stylesheet" href='<?= $style_link ?>'>
 </head>
